@@ -16,33 +16,32 @@ var numbs = [ 0,1,2,3,4,5,6,7,9 ];
 var Spchar = [ ' ! " # $ % & ( ) * + , - . / : ; < = > ? @ [ \\ ] \' ^ `{ | } ~ '];
 var min = 8
 var max = 128
+let charaInput;
+var numbT;
+var letterT;
+
 
 // Write password to the #password input
 function writePassword() {
-  let charaInput =  prompt(" How many charachter would you like your password to contain? \n 8 min 128 max");
+  charaInput =  prompt(" How many charachter would you like your password to contain? \n 8 min 128 max");
+  console.log(charaInput);
    if ( charaInput <= min || charaInput >= max){
      alert(" CHARACTERS need to have a MIN of 8 and MAX of 128 . ");
      return;
     } else if  ( charaInput >= min || charaInput <= max ) {
-       confirm( ' are you sure you want ' + charaInput + ' as password length ? ');
+    numbT = confirm("Would you like to incorporate numbers in your Password ? ");
+    console.log (numbT);
+    letterT = confirm(" would you like to incorporate letters in your password ?");
+    console.log (letterT);
        return; 
-     } else if  (charaInput !== String ); {
+     } else if  (charaInput === String ); {
       alert( charaInput + ' is not valid \n please enter numeric value .');
-      console.log (charaInput !== String);
+      console.log (charaInput === String);
       return;
-     } confirm ( )
-    
-    
-
-
+     } 
      
-   
-  // var password = generatePassword();
-  var passwordText = document.querySelector("#password");
 
-  passwordText.value = password ;
-
-}
+    }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
