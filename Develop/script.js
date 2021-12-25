@@ -14,27 +14,33 @@ var generateBtn = document.querySelector("#generate");
 var alpab = [' a b c d e f g h i j k l m n o p q r s t u v w x y z'];
 var numbs = [ 0,1,2,3,4,5,6,7,9 ];
 var Spchar = [ ' ! " # $ % & ( ) * + , - . / : ; < = > ? @ [ \\ ] \' ^ `{ | } ~ '];
-// let Plength = [null];
+var min = 8
+var max = 128
 
 // Write password to the #password input
 function writePassword() {
-  var window =  confirm(" Would you like a reliable password?");
-   if ( window === true ){
-     alpab = confirm( " would you like letters in your password? ");
-     numbs = confirm( " Would you like numbers in your Password?");
-   }
-     else { 
-      alert ( " you need to have at least one sections confirmed"); 
-    }
+  let charaInput =  prompt(" How many charachter would you like your password to contain? \n 8 min 128 max");
+   if ( charaInput <= min || charaInput >= max){
+     alert(" CHARACTERS need to have a MIN of 8 and MAX of 128 . ");
+     return;
+    } else if  ( charaInput >= min || charaInput <= max ) {
+       confirm( ' are you sure you want ' + charaInput + ' as password length ? ');
+       return; 
+     } else if  (charaInput !== String ); {
+      alert( charaInput + ' is not valid \n please enter numeric value .');
+      console.log (charaInput !== String);
+      return;
+     } confirm ( )
+    
+    
 
-    
-    
+
      
    
-  var password = generatePassword();
+  // var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  passwordText.value = password ;
 
 }
 
