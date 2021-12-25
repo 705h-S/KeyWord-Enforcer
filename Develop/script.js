@@ -14,11 +14,23 @@ var generateBtn = document.querySelector("#generate");
 var alpab = [' a b c d e f g h i j k l m n o p q r s t u v w x y z'];
 var numbs = [ 0,1,2,3,4,5,6,7,9 ];
 var Spchar = [ ' ! " # $ % & ( ) * + , - . / : ; < = > ? @ [ \\ ] \' ^ `{ | } ~ '];
-
+// let Plength = [null];
 
 // Write password to the #password input
 function writePassword() {
-  confirm(" Would you like a reliable password?");
+  var window =  confirm(" Would you like a reliable password?");
+   if ( window === true ){
+     alpab = confirm( " would you like letters in your password? ");
+     numbs = confirm( " Would you like numbers in your Password?");
+   }
+     else { 
+      alert ( " you need to have at least one sections confirmed"); 
+    }
+
+    
+    
+     
+   
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
