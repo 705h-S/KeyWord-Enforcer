@@ -13,13 +13,14 @@
 var generateBtn = document.querySelector("#generate");
 var alpab = [' a b c d e f g h i j k l m n o p q r s t u v w x y z'];
 var numbs = [ 0,1,2,3,4,5,6,7,9 ];
-var Spchar = [ ' ! " # $ % & ( ) * + , - . / : ; < = > ? @ [ \\ ] \' ^ `{ | } ~ '];
-var min = 8
-var max = 128
+var spChar = [ ' ! " # $ % & ( ) * + , - . / : ; < = > ? @ [ \\ ] \' ^ `{ | } ~ '];
+var min = 7
+var max = 129
 let charaInput;
 var numbT;
 var letterT;
-
+var specialC;
+var upperC;
 
 // Write password to the #password input
 function writePassword() {
@@ -28,20 +29,27 @@ function writePassword() {
    if ( charaInput <= min || charaInput >= max){
      alert(" CHARACTERS need to have a MIN of 8 and MAX of 128 . ");
      return;
-    } else if  ( charaInput >= min || charaInput <= max ) {
+   } else if  ( charaInput >= min || charaInput <= max ) {
     numbT = confirm("Would you like to incorporate numbers in your Password ? ");
     console.log (numbT);
+
     letterT = confirm(" would you like to incorporate letters in your password ?");
     console.log (letterT);
-       return; 
-     } else if  (charaInput === String ); {
-      alert( charaInput + ' is not valid \n please enter numeric value .');
-      console.log (charaInput === String);
-      return;
-     } 
-     
 
+    specialC = confirm(" What about special characters? you want to include that?");
+    console.log (specialC);
+
+    upperC = confirm(" By defualt letters are lowercase would you like to incoporate uppercase? ");
+    console.log (upperC);
+    return;
+     } else if  (charaInput != String ); {
+      alert( charaInput + ' is not valid \n please enter numeric value .');
+      console.log (charaInput != String);
+
+     } 
     }
+
+    
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
