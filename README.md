@@ -1,20 +1,87 @@
 # KeyWord-Enforcer
 
-GIVEN I need a new, secure password
+Need a super strong secure password?
+With this password generator you get to choose the length and characteristics of your passphrase all whille still having it be secure!
 
-WHEN I click the button to generate a password
+---
 
-THEN I am presented with a series of prompts for password criteria
+## Table of Contents
 
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
+* [Built with](#builtwith)
+* [Live link](#deployedlink)
+* [Site Layout](#layout)
+* [Functionality](#functionality)
+* [Learning points](#learningpoints )
+
+---
+## Built With
+
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+---
+## Deployed Link
+
+* [Password generator](#)
+
+![website](Develop/Images/webpage.png)
+
+---
+
+## Layout
+
+The page lay out is really simple in terms of CSS. Thiers a header, text area , and a button.
+
+---
+
+## Functionality
+
+### prompts 
+
+When you press on the "Generate password" button a series of window prompts will appear asking for the users inputs to customize the passphrase. 
+
+![.gifnav](Develop/Images/windowprompts.gif)
+
+
+### Error
+
+If user doesn't put a valid response, the system will regonize the user's input and ask them to enter a valid response. 
+
+![.gifnav](Develop/Images/error.alert.gif)
+
+### Random selector 
+
+using Math.floor(Math.random() we are able have the console make a random selection of an array. 
+```javascript
+var alpab = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+var random = Math.floor(Math.random() * alpab.length);
+console.log(random, alpab[random])
+   
+```
+
+![random](Develop/Images/random.gif)
+
+---
+
+### Learning points 
+
+In this project I learned how to make a static page become dynamic through javascript. 
+
+
+
+---
+
+### Resizing of screen 
+
+When you resize the Page's screen the website is responsive and adapts to corresponding site.
+
+![.gifresize](Assets/images/Resize.gif)
+
+---
+
+## License
+© 2021 Sinai. Inc.
+
+---
+##### Author Joshua Meza
+[GitHub](https://github.com/705h-S)

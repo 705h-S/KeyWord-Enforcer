@@ -11,7 +11,11 @@
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var alpab = [' a b c d e f g h i j k l m n o p q r s t u v w x y z'];
+
+var alpab = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+var random = Math.floor(Math.random() * alpab.length);
+console.log(random, alpab[random])
+
 var numbs = [ 0,1,2,3,4,5,6,7,9 ];
 var spChar = [ ' ! " # $ % & ( ) * + , - . / : ; < = > ? @ [ \\ ] \' ^ `{ | } ~ '];
 var min = 7
@@ -24,7 +28,7 @@ var upperC;
 
 // Write password to the #password input
 function writePassword() {
-  charaInput =  prompt(" How many charachter would you like your password to contain? \n 8 min 128 max");
+  charaInput =  prompt(" How many characters would you like your password to contain? \n 8 min 128 max");
   console.log(charaInput);
    if ( charaInput <= min || charaInput >= max){
      alert(" CHARACTERS need to have a MIN of 8 and MAX of 128 . ");
@@ -48,7 +52,6 @@ function writePassword() {
 
      } 
     }
-
     
 
 // Add event listener to generate button
