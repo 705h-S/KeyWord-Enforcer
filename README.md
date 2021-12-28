@@ -65,22 +65,12 @@ console.log(random, alpab[random])
 
 ### Learning points 
 
-In this project I learned how to make a static page become dynamic through javascript. 
-
-
-
----
-
-### Resizing of screen 
-
-When you resize the Page's screen the website is responsive and adapts to corresponding site.
-
-![.gifresize](Assets/images/Resize.gif)
+In this project I learned how to make a static page become dynamic through javascript. I learned the use of window/prompts/alerts/confirm. I also learned the use "if & else" statments. I also learned how pseudocode can help me have a plan of attack when it comes to writing algorithms. I do plan on furthering my knowledge so that I'll have the console validate the user inputs to execute and filter the selected prompts. 
 
 ---
 
 ## License
-© 2021 Sinai. Inc.
+for UC Berkely Extention bootcamp program
 
 ---
 ##### Author Joshua Meza
