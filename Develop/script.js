@@ -13,13 +13,20 @@
 var generateBtn = document.querySelector("#generate");
 
 var alpab = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-var random = Math.floor(Math.random() * alpab.length);
-console.log(random, alpab[random])
+var ABC = Math.floor(Math.random() * alpab.length);
+console.log(ABC, alpab[ABC])
 
 var numbs = [ 0,1,2,3,4,5,6,7,9 ];
-var spChar = [ ' ! " # $ % & ( ) * + , - . / : ; < = > ? @ [ \\ ] \' ^ `{ | } ~ '];
+var uno = Math.floor(Math.random() * numbs.length);
+console.log(uno, numbs[uno])
+
+var spChar = [ '!', '"', '#' ,'$', '%', '&', '(', ')', '*', '+', ',', '-', '.', '/', ':', ';' ,'<', '=', '>', '?', '@', '[', '\\', ']','^',];
+var symbol = Math.floor(Math.random() * spChar.length);
+console.log(symbol, spChar[symbol])
+
 var min = 7
 var max = 129
+
 let charaInput;
 var numbT;
 var letterT;
