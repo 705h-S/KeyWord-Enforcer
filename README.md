@@ -7,11 +7,11 @@ With this password generator you get to choose the length and characteristics of
 
 ## Table of Contents
 
-* [Built with](#builtwith)
-* [Live link](#deployedlink)
+* [Built with](#built-with)
+* [Live link](#deployed-link)
 * [Site Layout](#layout)
 * [Functionality](#functionality)
-* [Learning points](#learningpoints )
+* [Learning points](#learning-points)
 
 ---
 ## Built With
@@ -22,7 +22,7 @@ With this password generator you get to choose the length and characteristics of
 ---
 ## Deployed Link
 
-* [Password generator](#)
+* [Password generator](https://705h-s.github.io/KeyWord-Enforcer/)
 
 ![website](Develop/Images/webpage.png)
 
