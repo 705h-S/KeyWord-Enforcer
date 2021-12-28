@@ -24,7 +24,7 @@ With this password generator you get to choose the length and characteristics of
 
 * [Password generator](https://705h-s.github.io/KeyWord-Enforcer/)
 
-![website](Develop/Images/webpage.png)
+![website](Images/webpage.png)
 
 ---
 
@@ -40,14 +40,14 @@ The page lay out is really simple in terms of CSS. Thiers a header, text area , 
 
 When you press on the "Generate password" button a series of window prompts will appear asking for the users inputs to customize the passphrase. 
 
-![.gifnav](Develop/Images/windowprompts.gif)
+![.gifnav](Images/windowprompts.gif)
 
 
 ### Error
 
 If user doesn't put a valid response, the system will regonize the user's input and ask them to enter a valid response. 
 
-![.gifnav](Develop/Images/error.alert.gif)
+![.gifnav](Images/error.alert.gif)
 
 ### Random selector 
 
@@ -59,7 +59,7 @@ console.log(random, alpab[random])
    
 ```
 
-![random](Develop/Images/random.gif)
+![random](Images/random.gif)
 
 ---
 
